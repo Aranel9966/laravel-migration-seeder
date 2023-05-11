@@ -17,13 +17,13 @@ return new class extends Migration
             $table->id();
 
             $table->string('Azienda');
-            $table->string('Stazione di partenza');
-            $table->string('Stazione di arrivo');
-            $table->time('Orario di partenza');
-            $table->time('Orario di arrivo');
-            $table->decimal('Codice Treno');
-            $table->decimal('Numero Carrozze');
-            $table->boolean('In orario');
+            $table->string('Stazione_di_partenza');
+            $table->string('Stazione_di_arrivo');
+            $table->time('Orario_di_partenza');
+            $table->time('Orario_di_arrivo');
+            $table->decimal('Codice_Treno');
+            $table->decimal('Numero_Carrozze');
+            $table->boolean('In_orario');
             $table->boolean('Cancellato');
 
             $table->timestamps();
