@@ -1,6 +1,7 @@
 @extends('layouts/main-layout')
 @section('content')
     <h1>treni</h1>
+    
 
     @foreach ($tarin as $item)
     {{$item->Azienda}}
@@ -12,6 +13,7 @@
     {{$item->Numero_Carrozze}}
     {{$item->In_orario}}
     {{$item->Cancellato}}
+    {{$item->price}}
         
     @endforeach
 @endsection
