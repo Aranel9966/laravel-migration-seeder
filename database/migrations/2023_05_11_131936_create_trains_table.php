@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('Stazione_di_arrivo')->nullable();
             $table->dateTime('Orario_di_partenza')->nullable();
             $table->dateTime('Orario_di_arrivo')->nullable();
-            $table->decimal('Codice_Treno')->nullable();
+            $table->string('Codice_Treno', 50)->nullable();
             $table->decimal('Numero_Carrozze')->nullable();
             $table->boolean('In_orario')->nullable();
             $table->boolean('Cancellato')->nullable();
