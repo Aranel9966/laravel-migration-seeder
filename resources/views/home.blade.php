@@ -1,19 +1,38 @@
 @extends('layouts/main-layout')
 @section('content')
-    <h1>treni</h1>
+    <h1>Treni</h1>
     
+    <table class="table">
+    <thead>
+        <th>Azienda</th>
+        <th>Stazione di partenza </th>
+        <th>Stazione di arrivo</th>
+        <th>Orario di partenza</th>
+        <th>Orario di arrivo</th>
+    </thead>
+        <tbody>
+            @foreach ($tarins as $item)
+                <tr>
+                    <td>
+                        {{$item->Azienda}}
+                    </td>
+                    <td>
+                        {{$item->Stazione_di_partenza}}
+                    </td>
+                    <td>
+                        {{$item->Stazione_di_arrivo}}
+                    </td>
+                    <td>
+                        {{$item->Orario_di_partenza}}
+                    </td>
+                    <td>
+                        {{$item->Orario_di_arrivo}}
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
 
-    @foreach ($tarin as $item)
-    {{$item->Azienda}}
-    {{$item->Stazione_di_partenza}}
-    {{$item->Stazione_di_arrivo}}
-    {{$item->Orario_di_partenza}}
-    {{$item->Orario_di_arrivo}}
-    {{$item->Codice_Treno}}
-    {{$item->Numero_Carrozze}}
-    {{$item->In_orario}}
-    {{$item->Cancellato}}
-    {{$item->price}}
-        
-    @endforeach
 @endsection
+
+
